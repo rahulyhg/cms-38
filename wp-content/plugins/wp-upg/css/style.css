@@ -1,0 +1,194 @@
+.odude_hide{
+	display: none;
+}
+.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+.odude_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.odude_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.odude_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.odude_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.odude_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+.odude_left {
+  float: left;
+  text-align: right;
+  margin: 2px 10px;
+  display: inline;
+}
+
+.odude_right {
+  float: left;
+  text-align: left;
+  display: inline;
+}
+label.error{
+    font-size:10px; color:red;
+}
+.obox_basic 
+{
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  background: #fff;
+  obox-sizing: border-obox;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+}
+.obox {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  background: #fff;
+  obox-sizing: border-obox;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+}
+.obox:hover {
+  border: 1px solid #5890FF;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  background: #fff;
+  obox-sizing: border-obox;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+}
+.obox.blue {
+  border: 1px solid #5890FF;
+}
+.obox .header {
+  position: relative;
+  color: #9197a3;
+  font-size: 12px;
+  line-height: 1.38;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.obox .header a {
+  font-weight: bold;
+}
+.obox .header .date {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.obox .links {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.38;
+}
+.obox .links a {
+  color: #5890FF;
+  text-decoration: none;
+}
+.obox .links a:hover {
+  text-decoration: underline;
+}
+.obox .footer {
+  color: #444;
+  font-size: 12px;
+  line-height: 1.38;
+  border-top: 1px solid #ddd;
+  background: #F6F7F8;
+  padding: 5px 12px;
+  margin: 8px -12px -10px -12px;
+}
+
+.margin-box {
+            padding: 0.1em;
+        }
+
+		div.odude_img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+
+
+
+div.odude_img:hover {
+    border: 1px solid #777;
+}
+
+div.odude_img img {
+    width: 100%;
+    height: auto;
+}
+
+div.odude_desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Text over Image */
+
+.upg_text_over_image {
+  position: relative;
+
+}
+
+.upg_text_over_image p {
+  background-color: black;
+  top: 5%;
+  color: white;
+  font-family: Roboto;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: absolute;
+}
+
+.upg_headline
+{
+color: #444;
+ margin: 0;
+ padding: 0px 0px 6px 0px;
+ font-size: 20px;
+ line-height: 16px;
+ font-weight: bold;
+}

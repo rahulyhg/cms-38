@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShowCase Streaming</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="http://www.showcasestreaming.com/player/flowplayer-3.2.12.min.js"></script>
+<style>
+  #draggable { width: 400px; height: 300px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #droppable { width: 420px; height: 320px; padding: 0.5em; float: left; margin: 10px; }
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" );
+      }
+    });
+  });
+  </script>
+    </head>
+<body>
+<div id="draggable" class="ui-widget-content" style="height: 300px;	width: 400px">
+<div id="player" class="ui-widget-header" style="height: 100%;  width:100%; z-index: auto !important; max-height: 480px; min-height: 120px; max-width: 640px; min-width: 160px;"></div>
+
+					<script type="text/javascript">
+						 flowplayer("player", "http://www.showcasestreaming.com/player/flowplayer-3.2.16.swf", {
+							playlist: [
+								{url: 'http://www.showcasestreaming.com/images/camlogo.jpg', duration: 5, scaling: 'scale'  },
+
+								{url: 'live', provider: 'rtmp', autoPlay: true, live: true }
+							],
+							clip: { bufferTime: 1.5, bufferTimeMax: 5.0 },
+ 							plugins: {
+								rtmp: {
+									url: 'http://www.showcasestreaming.com/player/flowplayer.rtmp-3.2.12.swf',
+									netConnectionUrl: 'rtmp://206.217.221.113/showcase'
+								},
+								controls: {  
+									url: 'http://www.showcasestreaming.com/player/flowplayer.controls-3.2.15.swf', 
+ 
+									// which buttons are visible and which not ?  
+									play:true,
+									stop:true,									
+									fullscreen:true,  
+ 
+								// scrubber is a well known nickname to the timeline/playhead combination  
+									scrubber: false,
+									
+									backgroundColor: '#000000', 
+        					backgroundGradient: 'low',
+								}
+							},
+								play: {opacity:0},
+							
+							onLoad: function() { // called when player has finished loading
+          this.setHeight(300); // set height property
+		  this.setWidth(400); // set width property
+		  this.setmaxHeight(480);
+	  }
+  });
+							</script>
+</div>
+<div id="droppable" class="ui-widget-header">
+</div>
+</body>
+</html>
